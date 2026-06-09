@@ -73,3 +73,5 @@ Vitest with jsdom + React Testing Library. Tests live alongside source in `__tes
 ### Tastes
 
 Use comments sparingly. Only comment complex code.
+
+The database schema is defined in the @prisma/schema.prisma file. Reference it anytime you need to understand the structure of data stored in the database.

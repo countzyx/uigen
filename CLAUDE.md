@@ -68,3 +68,8 @@ JWT-based, server-only (`src/lib/auth.ts`). Sessions are stored as `httpOnly` co
 ### Testing
 
 Vitest with jsdom + React Testing Library. Tests live alongside source in `__tests__` subdirectories. The vitest config is at `vitest.config.mts`.
+
+
+### Tastes
+
+Use comments sparingly. Only comment complex code.

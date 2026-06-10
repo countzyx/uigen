@@ -9,6 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "vitest",
+    "coverage": "vitest run --coverage --coverage.include='src/**' --coverage.exclude='src/generated/**'",
     "setup": "npm install && npx prisma generate && npx prisma migrate dev",
     "db:reset": "npx prisma migrate reset --force"
   },
@@ -51,6 +52,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^4.5.2",
+    "@vitest/coverage-v8": "^3.2.4",
     "eslint": "9.29.0",
     "eslint-config-next": "15.3.4",
     "jsdom": "^26.1.0",

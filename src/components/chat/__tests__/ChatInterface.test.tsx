@@ -161,6 +161,13 @@ test("scrolls when messages change", () => {
 });
 
 test("renders with correct layout classes", () => {
+  // Render with a message so the ScrollArea branch (not the empty state) is
+  // exercised — that's where the flex-1 scroll wrapper lives.
+  (useChat as any).mockReturnValue({
+    ...mockUseChat,
+    messages: [{ id: "1", role: "user", content: "hi" }],
+  });
+
   const { container } = render(<ChatInterface />);
 
   const mainDiv = container.firstChild as HTMLElement;
